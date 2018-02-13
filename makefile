@@ -1,3 +1,5 @@
+#!/usr/bin/make -f
+
 .PHONY: test
 test:
-	hamlhint
+	htmlhint
