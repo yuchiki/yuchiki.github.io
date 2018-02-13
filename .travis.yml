@@ -1,5 +1,8 @@
 language: node_js
 node-js: "6.0.0"
 before_install:
- - npm install -g htmlhint
+    - sudo apt-get update -qq
+    - npm install -g npm@'>=5.5.1'
+    - npm install -g nvm@'>=0.33.5'
+    - npm install -g htmlhint
 script: 
