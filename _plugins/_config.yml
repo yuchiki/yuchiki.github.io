@@ -1,0 +1,5 @@
+exclude: ['Gemfile', 'Gemfile.lock']
+
+sass:
+    syntax: sass
+    style: compact
