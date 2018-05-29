@@ -1,3 +1,3 @@
 require 'rubygems'
 require 'bundler/setup'
-Budnler.require(:default)
+Bundler.require(:default)
