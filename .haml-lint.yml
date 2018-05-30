@@ -1,0 +1,4 @@
+skip_frontmatter: true
+linters:
+    Indentation:
+        width: 4

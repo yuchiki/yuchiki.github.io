@@ -1,0 +1,16 @@
+- require_relative ('_helper/helper.rb')
+- font_dir = 'https://fonts.googleapis.com/earlyaccess'
+!!!
+%html{ lang: 'ja' }
+    %head
+        %meta{ charset: 'UTF-8' }
+        %title Yuchiki.net
+        %link{ rel: 'stylesheet', href: font_path('nicomoji') }
+        %link{ rel: 'stylesheet', href: font_path('hannnari') }
+        %link{ rel: 'stylesheet', href: font_path('roundedmplus1c') }
+        %link{ rel: 'stylesheet', href: '/css/styles.css' }
+    %body
+        %h1.nav-to-top
+            %a{ href: '/' } yuchiki.github.io
+        %hr
+        {{content}}
