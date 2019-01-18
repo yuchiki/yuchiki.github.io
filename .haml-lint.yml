@@ -1,0 +1,6 @@
+skip_frontmatter: true
+linters:
+    Indentation:
+        width: 4
+    ViewLength:
+        max: 200
