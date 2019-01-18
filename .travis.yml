@@ -6,4 +6,5 @@ before_install:
     - nvm install 8.7.0
     - nvm use 8.7.0
     - npm install -g htmlhint
-script: 
+    - npm install -g sass-lint
+script:
