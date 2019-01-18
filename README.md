@@ -4,7 +4,7 @@
 
 | Repository | Status |
 | :-     | :-      |
-| Master | ![Build Status](https://travis-ci.org/yuchiki/yuchiki.github.io.svg?branch=master) |
+| Source |  [![Build Status](https://travis-ci.org/yuchiki/yuchiki.github.io.svg?branch=source)](https://travis-ci.org/yuchiki/yuchiki.github.io)|
 
 ## What's this
 
