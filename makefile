@@ -1,16 +1,24 @@
 #!/usr/bin/make -f
 
-.PHONY: test default
+SRC :=src
+LAST_BUILD :=$(SRC)/last_build
+LAST_BUILD_INDEX :=$(LAST_BUILD)/index.html
+
+.PHONY: test default clean
 
 default:
-	echo "<!DOCTYPE html><html lang=\"ja\">" > last_build/index.html
-	echo "<head><meta charset=\"UTF-8\"><title>Yuchiki</title></head>" >> last_build/index.html
-	echo "<body>" >> last_build/index.html
-	date -R >> last_build/index.html
-	echo "</body></html>" >> last_build/index.html
+	mkdir -p $(LAST_BUILD)
+	echo "<!DOCTYPE html><html lang=\"ja\">" > $(LAST_BUILD_INDEX)
+	echo "<head><meta charset=\"UTF-8\"><title>Yuchiki</title></head>" >> $(LAST_BUILD_INDEX)
+	echo "<body>" >> $(LAST_BUILD_INDEX)
+	date -R >> $(LAST_BUILD_INDEX)
+	echo "</body></html>" >> $(LAST_BUILD_INDEX)
 	bundle exec jekyll build
 
 test:
 	sass-lint --max-warnings 0 -v
 	haml-lint
 	htmlhint
+
+clean:
+	rm -rf docs/

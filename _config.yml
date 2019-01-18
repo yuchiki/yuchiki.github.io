@@ -1,5 +1,6 @@
 exclude: ['Gemfile', 'Gemfile.lock', 'makefile', 'README.md']
 
+source: src
 destination: docs
 
 sass:
