@@ -1,5 +1,7 @@
 exclude: ['Gemfile', 'Gemfile.lock', 'makefile', 'README.md']
 
+destination: docs
+
 sass:
     syntax: sass
     style: compact
