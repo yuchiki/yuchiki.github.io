@@ -11,10 +11,6 @@ default:
 	bundle exec jekyll build
 
 test:
-<<<<<<< HEAD
-	htmlhint
-=======
 	sass-lint --max-warnings 0 -v
 	haml-lint
 	htmlhint
->>>>>>> source
