@@ -1,0 +1,118 @@
+---
+    layout: default
+---
+
+%h1 Diacritizer
+
+This is a diacritizer.
+It makes appearence of English bit wierd.
+%br
+input:
+%br
+%textarea#inputText{ name: 'text', cols: 100, rows: 10 }
+    Aur Fadher hu art in heeven, Haeloud bi dhai Neim. Dhai kingdem kaom. Dhai wil bi daon, on erth aez iz in Heeven. Giv aos dhis dei aur deili breed, aend fergiv aos aur treespesiz, aez wi fergiv dhouz hu treespes egeenst aos, aend lied aos nat intu teempteishen, baot diliver fraom ievel. Eimen.
+%br
+output:
+%br
+%textarea#convertedText{ name: 'convertedText', cols: 100, rows: 10}
+
+%table
+    %thead
+        %tr
+            %th Pronunciation
+            %th Letter
+            %th Input Method
+    %tbody
+        %tr
+            %td /i/
+            %td í
+            %td ie
+        %tr
+            %td /ɪ/
+            %td i
+            %td i
+        %tr
+            %td /ɛ/
+            %td è
+            %td ee
+        %tr
+            %td /æ/
+            %td ä
+            %td ae
+        %tr
+            %td /u/
+            %td ú
+            %td uu
+        %tr
+            %td /ʊ/
+            %td u
+            %td u
+        %tr
+            %td /ʌ/
+            %td ă
+            %td ao
+        %tr
+            %td /ə/
+            %td e
+            %td e
+        %tr
+            %td /ɚ/
+            %td er
+            %td er
+        %tr
+            %td /ɑ/
+            %td o
+            %td o
+        %tr
+            %td /eɪ/
+            %td é
+            %td ei
+        %tr
+            %td /oʊ/
+            %td ó
+            %td ou
+        %tr
+            %td /aɪ/
+            %td ai
+            %td ai
+        %tr
+            %td /aʊ/
+            %td au
+            %td au
+        %tr
+            %td /oɪ/
+            %td oi
+            %td oi
+        %tr
+            %td /ʃ/
+            %td š
+            %td sh
+        %tr
+            %td /ʒ/
+            %td ž
+            %td zh
+        %tr
+            %td /tʃ/
+            %td č
+            %td ch
+        %tr
+            %td /dʒ/
+            %td ǧ
+            %td gh
+        %tr
+            %td /θ/
+            %td ŧ
+            %td th
+        %tr
+            %td 	/ð/
+            %td đ
+            %td dh
+
+%script{ type: 'text/javascript', src: './main.js'}
+
+#examples
+    %h2 Example
+    %p
+        Aur Fadher hu art in heeven, Haeloud bi dhai Neim. Dhai kingdem kaom. Dhai wil bi daon, on erth aez iz in Heeven. Giv aos dhis dei aur deili breed, aend fergiv aos aur treespesiz, aez wi fergiv dhouz hu treespes egeenst aos, aend lied aos nat intu teempteishen, baot diliver fraom ievel. Eimen.
+    %p
+        Aur Fađer hu art in hèven, Hälód bi đai Ném. Đai kingdem kăm. Đai wil bi dăn, on erŧ äz iz in Hèven. Giv ăs đis dé aur déli brèd, änd fergiv ăs aur trèspesiz, äz wi fergiv đóz hu trèspes egènst ăs, änd líd ăs nat intu tèmptéšen, băt diliver frăm ível. Émen.
