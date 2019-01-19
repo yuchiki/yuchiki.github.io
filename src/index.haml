@@ -1,90 +1,37 @@
 ---
     layout: default
 ---
-
-:ruby
-    MY_BLOG = 'http://yuchiki1000yen.hatenablog.com'.freeze
-    F_STAR = "#{MY_BLOG}/entry/2018/07/07/155854#".freeze
-
-%a{ href: '/en/' } English
+どうも.　Yuchikiです.
 %br
-%h1 Yuchiki
-コンピュータ科学を勉強しています。
-%h1 Profile
-%h2 History
-%ul
-    %li 2017-4 - Now 東京大学大学院情報理工学系研究科
-    %li 2015-4 - 2017-3 東京大学理学部情報科学科
-    %li 2013-4 - 2015-3 東京大学理科一類
-%h2 自然言語たち
-%ul
-    %li 日本語: 母語
-    %li 英語: 少し
-    %li ラテン語: 基礎文法は理解
-%h2 プログラミング言語とツールたち
-%h3 業務経験
-%ul
-    %li Ruby
-    %li haml
-    %li scss
-    %li Coffee Script
-    %li Ruby on Rails
-    %li Jenkins (CI tool)
-%h3 趣味で経験
-%ul
-    %li Haskell
-    %li C++
-    %li C#
-    %li Travis CI (CI tool)
-%h3 大学の授業で経験
-%ul
-    %li C
-    %li PowerPC Assembly
-    %li Scheme
-    %li OCaml
-    %li Haskell
-    %li VHDL
-    %li Python
-%h3 Hello World、Fizz Buzz程度の経験
-%ul
-    %li VB6
-    %li VB.net
-    %li TypeScript
-    %li JavaScript
-    %li Brainf*ck
-    %li Unlambda
-    %li Lua
-    %li MIPS Assembly
-    %li Common Intermediate Language (dotnet VM Assembly)
-    %li
-        %a{ href: F_STAR } F*
-%h1 興味・関心
-%h2 コンピュータ科学
-%ul
-    %li 型理論
-    %li 形式検証
-    %li 数理論理学
-    %li 言語設計
-    %li 言語処理系
-    %li C#
-%h2 言語・言語学
-%ul
-    %li 比較言語学
-    %li 歴史言語学
-    %li 音声学
-    %li 音韻論
-    %li ラテン語
-%h2 その他
-%ul
-    %li 日本民謡・歌謡
-    %li 西洋民謡・歌謡
-    %li 浪曲
-    %li 街歩き
-%h1 アカウント類
+%a{ href: '/profile' } プロフィール
+%br
+%a{ href: '/last_build' } 最終更新日時
+
+%h2 作ったもの
+
+%dl
+    %dt
+        %a{ href: '/diacritizer' } Diacritizer
+    %dd
+        私がエキゾチックな表記で英語を綴るときに使ってるやつ
+    %dl
+        %a{ href: 'https://github.com/yuchiki/laml' } Laml
+    %dd
+        Haml的な表記でLatexが書けるもの.更新していません.
+    %dl
+        %a{ href: 'https://github.com/yuchiki/SKI' } SKI Repl
+    %dd
+        SKIコンビネーターを簡約するrepl. 式を名前に束縛する機能付き.
+    %dl
+        %a{ href: 'https://github.com/yuchiki/YuchiKaml' } YuchiKaml
+    %dd
+        ML風動的型付け自作言語のインタプリタ。CのパーサーコンビネータライブラリSpracheに馴れるための習作です。
+
+%h2 アカウント類
 %dl
     %dt Twitter
     %dd
-        %a{ href: 'https://twitter.com/yuchiki1000yen' } @yuchiki100yen
+        %a{ href: 'https://twitter.com/yuchiki1000yen' } @yuchiki1000yen
     %dt Github
     %dd
         %a{ href: 'https://github.com/yuchiki' } yuchiki
@@ -92,8 +39,3 @@
     %dd
         %a{ href: 'http://yuchiki1000yen.hatenablog.com' } Amosapientiam
 %br
-%h3 AtCoder
-始めたばっかりです。
-%a{ href: 'http://kenkoooo.com/atcoder/?user=yuchiki' } Kenkoooo.com
-
-= img('atcoder', 'kenkoo.png', "the languages I've used in AtCoder Contests.")
