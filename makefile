@@ -6,7 +6,7 @@ LAST_BUILD_INDEX :=$(LAST_BUILD)/index.html
 
 .PHONY: test default clean
 
-default:
+default: test
 	mkdir -p $(LAST_BUILD)
 	echo "<!DOCTYPE html><html lang=\"ja\">" > $(LAST_BUILD_INDEX)
 	echo "<head><meta charset=\"UTF-8\"><title>Yuchiki</title></head>" >> $(LAST_BUILD_INDEX)

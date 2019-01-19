@@ -37,7 +37,7 @@ const diacritize = (str) => {
 //});
 
 setInterval(() => {
-    const text = document.getElementById('inputText').value;
+    const text = document.getElementById('input-text').value;
     const convertedText = diacritize(text);
-    document.getElementById('convertedText').textContent = convertedText;
+    document.getElementById('converted-text').textContent = convertedText;
 }, 1000);
