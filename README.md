@@ -13,4 +13,11 @@ Sources of [my github.io](https://yuchiki.github.io "My github.io").
 ## Directories
 
 source files are in src/
-If I run `make`, jekyll builds htmls into docs.
+If I run `make`, jekyll builds html files into docs.
+
+## How to update
+
+```sh
+make
+git subtree push --prefix docs/  origin master
+```
