@@ -4,7 +4,7 @@ SRC :=src
 LAST_BUILD :=$(SRC)/last_build
 LAST_BUILD_INDEX :=$(LAST_BUILD)/index.html
 
-.PHONY: test default clean
+.PHONY: test default local clean
 
 default: test
 	mkdir -p $(LAST_BUILD)
@@ -19,6 +19,9 @@ test:
 	sass-lint --max-warnings 0 -v
 	haml-lint
 	htmlhint
+
+local:
+	jekyll s
 
 clean:
 	rm -rf docs/
